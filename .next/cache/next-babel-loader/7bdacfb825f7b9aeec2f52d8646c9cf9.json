@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./product\";","map":{"version":3,"sources":["/Users/robertlark/SonicArchitecture/Advanced-React/sick-fits/frontend/pages/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,WAAtB","sourcesContent":["export {default} from \"./product\";\n"]},"metadata":{},"sourceType":"module"}
