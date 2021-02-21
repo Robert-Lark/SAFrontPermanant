@@ -5,7 +5,8 @@ import Supreme from "./styles/Supreme";
 import {useUser} from "./User";
 import formatMoney from "../lib/formatMoney";
 import calcTotalPrice from "../lib/calcTotalPrice";
-import { useCart } from "../lib/cartState";
+import {useCart} from "../lib/cartState";
+import RemoveFromCart from "./RemoveFromCart";
 
 const CartItemStyles = styled.li`
   padding: 1rem 0;
@@ -41,6 +42,7 @@ function CartItem({cartItem}) {
           </em>
         </p>
       </div>
+      <RemoveFromCart id={cartItem.id}></RemoveFromCart>
     </CartItemStyles>
   );
 }
@@ -48,7 +50,7 @@ function CartItem({cartItem}) {
 export default function Cart() {
   const user = useUser();
   const {cartOpen, closeCart} = useCart();
-  
+
   if (!user) return null;
 
   return (
