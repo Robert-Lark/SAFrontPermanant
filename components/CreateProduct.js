@@ -37,9 +37,9 @@ export default function CreateProduct() {
   //returned from the useForm custom hook we built
   const { inputs, handleChange, clearForm, resetForm } = useForm({
     image: '',
-    name: 'Nice Shoes',
-    price: 34234,
-    description: 'These are the best shoes!',
+    name: '',
+    price: 0,
+    description: '',
   });
   const [createProduct, { loading, error, data }] = useMutation(
     CREATE_PRODUCT_MUTATION,
@@ -107,7 +107,7 @@ export default function CreateProduct() {
           />
         </label>
 
-        <button type="submit">+ Add Product</button>
+        <button type="submit">+ Add Title</button>
       </fieldset>
     </Form>
   );
