@@ -47,6 +47,8 @@ export default function OrdersPage() {
   if (loading) return <p>Loading...</p>;
   if (error) return <ErrorMessage error={error} />;
   const { allOrders } = data;
+  console.log(allOrders)
+  console.log(allOrders.length)
   return (
     <div>
       <Head>
@@ -55,7 +57,8 @@ export default function OrdersPage() {
       <h2>You have {allOrders.length} orders!</h2>
       <OrderUl>
         {allOrders.map((order) => (
-          <OrderItemStyles>
+          
+          <OrderItemStyles key={order.id}>
             <Link href={`/order/${order.id}`}>
               <a>
                 <div className="order-meta">

@@ -3,7 +3,6 @@
 
 import {useQuery} from "@apollo/client";
 import gql from "graphql-tag";
-import next from "next";
 import ErrorMessage from "../../components/ErrorMessage";
 import OrderStyles from "../../components/styles/OrderStyles";
 import Head from "next/head";
