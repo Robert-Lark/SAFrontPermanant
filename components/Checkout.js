@@ -80,10 +80,12 @@ function CheckoutForm() {
     console.log(`Finished with the order!!`);
     console.log(order);
     // 6. Change the page to view the order
-router.push ({
-  pathname: '/order',
-  query: {id: order.data.checkout.id}
-})
+    router.push({
+      pathname: `/order/[id]`,
+      query: {
+        id: order.data.checkout.id,
+      },
+    });
     // 7. Close the cart
 closeCart();
     // 8. turn the loader off
