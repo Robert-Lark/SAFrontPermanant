@@ -47,8 +47,6 @@ export default function OrdersPage() {
   if (loading) return <p>Loading...</p>;
   if (error) return <ErrorMessage error={error} />;
   const { allOrders } = data;
-  console.log(allOrders)
-  console.log(allOrders.length)
   return (
     <div>
       <Head>
