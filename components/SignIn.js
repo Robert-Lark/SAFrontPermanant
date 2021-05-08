@@ -42,6 +42,7 @@ await signin();
 
     resetForm()
     //here the email and password is sent to the graphql api
+    
   }
   const error =
   data?.authenticateUserWithPassword.__typename ===

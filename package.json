@@ -1,12 +1,12 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "Sonic-Arch-frontend",
   "version": "2.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "A home for your love of music",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
     "build": "next build",
-    "start": "next start -p 7777",
+    "start": "next start -p 8080",
     "test": "NODE_ENV=test jest --watch"
   },
   "author": "",
